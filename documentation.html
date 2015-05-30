@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Documentation</title>
+  <meta charset="utf-8">
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  
+  
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<script src="nice/jquery.nicescroll.min.js"></script>
+
+ <script>
+ function myfunction()
+ {
+ window.open("index.html");
+ }
+ 
+ </script>
+ 
+<script>
+  $(document).ready(function() {
+  
+	var nice = $("html").niceScroll();  // The document page (body)
+	
+	$("#div1").html($("#div1").html()+' '+nice.version);
+    
+    $("#boxscroll").niceScroll({cursorborder:"",cursorcolor:"#00F",boxzoom:true}); // First scrollable DIV
+
+    $("#boxscroll2").niceScroll("#contentscroll2",{cursorcolor:"#F00",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // Second scrollable DIV
+    $("#boxframe").niceScroll("#boxscroll3",{cursorcolor:"#0F0",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
+	
+    $("#boxscroll4").niceScroll("#boxscroll4 .wrapper",{boxzoom:true});  // hw acceleration enabled when using wrapper
+    
+  });
+</script>
+
+
+ <script>
+ 
+function myfunc()
+{
+
+       $('html, body').animate({
+    scrollTop: $(".institution").offset().top
+}, 1000);
+
+
+}
+ 
+  
+function myfunc1()
+{
+
+       $('html, body').animate({
+    scrollTop: $(".navitem").offset().top
+}, 1000);
+
+
+}
+ 
+  
+function myfunc2()
+{
+
+       $('html, body').animate({
+    scrollTop: $(".backgroundpic").offset().top
+}, 1000);
+
+
+}
+ 
+ 
+ 
+ 
+ </script>
+ 
+ 
+  <link rel="stylesheet" href="instidealstyle.css">
+ 
+ <style>
+  .table td
+  {
+   transition:all 0.4s;
+  }
+ .table td:hover
+ {
+ cursor:pointer;
+
+ background-color:grey;
+ color:white;
+ }
+ 
+ </style>
+ </head>
+ 
+<body>
+
+
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+ 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    <a class="navbar-brand" id="red" href="index.html"><b>INSTIDEAL</b></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+      
+      
+        <li><a href="about.html" id="red" >ABOUT</a></li>
+        <li><a href="contact.html" id="red">CONTACT US</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right"> <li>
+		
+		<div class="number" id="mright">
+<p>CALL : 9132886514</p>
+</div>
+		
+		</li>
+       
+      </ul>
+    </div>
+
+</nav>
+<br/><br/>
+<br/><br/>
+
+
+
+<div class="container">
+
+
+<img src="images/pheonix2.png" height="100px" width="200px"><br/>
+<h4>Created: 23/05/2015<br/>
+By: Pheonix Contriver</h4>
+<p> If you have any questions that are beyond the scope of this help file, please feel free to contact. Thanks so much!
+
+</p>
+
+
+
+
+
+
+
+
+  <center>
+  <h2>TABLE OF CONTENTS</h2>
+</center>
+  <br/>  
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>CONTENTS</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td onclick="myfunc()">1. ADD NEW INSTITUTION</td>
+ 
+      </tr>
+      <tr>
+        <td onclick="myfunc1()">2. ADD NEW ITEM IN NAVIGATION MENU</td>
+
+      </tr>
+      <tr>
+        <td onclick="myfunc2()">3. CHANGE BACKGROUND IMAGE(HOMEPAGE)</td>
+       </tr>
+   
+  
+    </tbody>
+  </table>
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+
+<div class="institution">
+<h1>1. ADDING A INSTITUTION</h1>
+<p>STEP 1 : open the html document <br/><br/>iit.html<br/>medical.html<br/>cbse.html<br/>chse.html<br/>in notepad depending upon the category of institute.</p>
+
+<p>STEP 2 : scroll down and you will find a "div" element with class list.Inside this div element ,you will find div with class="classes".</p>
+<img src="docimages/class.png" height="500px" width="100%"/>
+<br/>
+<br/>
+<p>STEP 3 : copy this div with class="classes" and paste just below the last div with class="classes".</p>
+
+<p>STEP 4 : change the image of new institute in "img" tag . NOTE: The image must be placed in images folder.</p>
+<p>STEP 5 : change the courses offered if any and change the link in "href" tag to page of new institution that we are going to create in next steps.</p>
+
+
+<h2>CREATING A NEW PAGE FOR INSTITUTION</h2>
+<br/>
+<p>STEP 6 : create a copy of any institution page for ex- vertex.html.Change the name of file with new institution.Open this file in notepad</p>
+<p>STEP 7 : scroll down and you will find a comment "content starts" just after the nav ends.</p>
+<img src="docimages/content.png" height="500px" width="100%"/>
+<br/>
+<br/>
+<p>STEP 8 : Change the heading from vertex classes to new institution and image in img tag just below heading. </p>
+<img src="docimages/about.png" height="500px" width="100%"/>
+<br/>
+<br/>
+
+<p>STEP 9 : Again change the heading from vertex classes to new institution and in the div with class="about" , replace the content of new institution.</p>
+<p>STEP 10 : just below it, you will find a div with class="info" , replace vertex classes with new institution.</p>
+<p>STEP 11 : just below it, you will find a div with class="about" , replace the lines of vertex classes with new institution.</p>
+
+<p>STEP 12 : To change the title of the page,go the head section and change title in title tag.</p>
+<p>STEP 13 : save this file and finally its done.</p>
+
+</div>
+
+<br/>
+<br/>
+<br/>
+<div class="navitem">
+<h1>2. ADD A NEW ITEM IN NAVIGATION MENU</h1>
+<br/>
+<br/>
+<p>STEP 1 : open the html file and look for the "nav" tag.(in the beginning of body)</p>
+<img src="docimages/nav.png" height="500px" width="100%"/>
+<br/>
+<br/>
+<p>STEP 2 : To add the item in center ,copy the li element just below the contact us link and replace the link in "href" tag to new page.</p>
+<p>STEP 3 : To add the item in right corner ,copy the li element in ul element with class navbar-right and replace the link in "href" tag to new page.</p>
+
+</div>
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+
+
+
+<div class="backgroundpic">
+<h1>3. CHANGE THE BACKGROUND PIC</h1>
+<br/>
+<br/>
+<p>STEP 1 : open the css file with name "instideal.css".</p>
+<img src="docimages/back.png" height="500px" width="100%"/>
+<br/>
+<br/>
+<p>STEP 2 : In the .frame styling, change the url in backgrounnd-image property to the new pic.</p>
+<p>STEP 3 : Background pic is changed.</p>
+
+
+</div>
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+<br/>
+
+
+
+<!--footer-->
+<div class="container-fluid">
+<div class="footer">
+
+<div class="row" id="hei">
+
+<div class="col-md-4" id="border">
+<div class="bottom1">
+<h3>COURSES</h3>
+
+<br/>
+<br/>
+<a href="medical.html">MEDICAL</a><br/>
+<a href="cbse.html">CBSE</a><br/>
+<a href="chse.html">CHSE</a><br/>
+<a href="iit.html">IIT-JEE</a>
+
+</div>
+<br/>
+<br/>
+<br/>
+</div>
+
+
+
+<div class="col-md-4" id="border">
+
+<h3>FOLLOW US</h3><br/>
+<div class="row">
+<div class="col-md-1">
+</div>
+
+
+<div class="col-md-11">
+<div class="follow">
+
+
+<ul id="sprite">
+<li id="s3"><a href="https://www.facebook.com/instideal?_rdr"></a></li>
+<li id="s1"><a href="https://twitter.com/instideal"></a></li>
+<li id="s2"><a href="https://www.linkedin.com/profile/view?id=393674409&authType=NAME_SEARCH&authToken=InVc&locale=en_US&srchid=4090194761432037151417&srchindex=2&srchtotal=2&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A4090194761432037151417%2CVSRPtargetId%3A393674409%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue"></a></li>
+
+
+
+
+</ul>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+</div>
+</div>
+
+
+
+</div>
+
+      <a  href="index.html"><img src="images/logo2.png" width="200px" height="50px"></a>
+<p>Copyright © Instideal 2015. All Rights Reserved</p>
+</div>
+
+
+
+
+<div class=" col-md-4" id="border">
+<div class="contact">
+<h3>CONTACT US</h3>
+
+
+<br/>
+
+<address>
+INSTIDEAL<br />
+Phone: +9132886514<br/>
+
+<div class="phone">
+<a href="mailto:Instidealbbsr@gmail.com" ><span class="glyphicon glyphicon-envelope"></span> &nbsp Email</a>
+</div>
+
+</address>
+<br/>
+<br/>
+
+<div class="pheonix">
+<img src="images/pheonix3.png" height="80px" width="200px">
+
+</div>
+<br/>
+<br/>
+
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+
+
+</body>
+</html>
